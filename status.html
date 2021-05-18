@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><title></title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+</head>
+<body>
+    <div class="container">
+  <div class="card">
+        <h1 class="card-title">Donor Status</h1>
+        <small class="card-subtitle">Enter your credentials here</small>
+        <form class="card-form">
+            <label for="name">Full Name</label>
+            <div class="card-input-container email">
+                <input type="text" placeholder="Enter patient's name" id="name">
+            </div>
+            <label for="username">E-mail Id</label>
+            <div class="card-input-container email">
+                <input type="text" placeholder="Enter your e-mail id" id="email">
+            </div>
+             <label for="gender">Gender:</label>
+            <div><p style="color: grey;">
+                &emsp;&emsp;<input type="radio" name="gender" value="female">&#09;Female
+                &emsp;&emsp;<input type="radio" name="gender" value="male">&#09;Male
+                &emsp;&emsp;<input type="radio" name="gender" value"other">&#09;Other</p><br>
+            </div>
+            <label for="email">Mobile Number</label>
+            <div class="card-input-container number">
+                <input type="tel" name="phone" maxlength="10" placeholder="Enter your mobile number" pattern="[6789][0-9]{9}" id="phone">
+            </div>
+
+            <label for="date">Date of recent donation</label>
+            <div class="card-input-container date">
+                <input type="date" placeholder="Enter your recent blood donation date" id="date">
+            </div>
+            <button class="card-button">Submit</button>
+
+</div>
+</body>
+</html>

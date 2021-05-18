@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+  <div class="card">
+        <h1 class="card-title">Registration</h1>
+        <form class="card-form" action="donar.html">
+            <label for="firstname">First Name</label>
+            <div class="card-input-container firstname">
+                <input type="text" placeholder="Enter your first name" id="name">
+            </div>
+            <label for="lastname">Last Name</label>
+            <div class="card-input-container lastname">
+                <input type="text" placeholder="Enter your last name" id="name">
+            </div>
+
+            <label for="email">E-mail Id</label>
+            <div class="card-input-container email">
+                <input type="text" placeholder="xxxxx@gamil.com" id="name">
+            </div>
+            <label for="email">Mobile Number</label>
+            <div class="card-input-container number">
+                <input type="tel" name="phone" maxlength="10" placeholder="Enter your mobile number" pattern="[6789][0-9]{9}" id="phone">
+            </div>
+            
+             <label for="gender">Gender:</label>
+            <div><p style="color: grey;">
+                &emsp;&emsp;<input type="radio" name="gender" value="female">&#09;Female
+                &emsp;&emsp;<input type="radio" name="gender" value="male">&#09;Male
+                &emsp;&emsp;<input type="radio" name="gender" value"other">&#09;Other</p><br>
+             <label for="dob">Date of Birth</label></div>
+            <div class="card-input-container dob">
+                <input type="date">
+            </div>
+            
+             <div class="card-input-container bloodgroup">
+                <label for="bloodgroup">Blood Group: </label>
+                <select name="bloodgroup" id="bloodgroup">
+                    <option value="select"> Select </option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+
+            <label for="heamoglobin">Heamoglobin(%)</label>
+            <div class="card-input-container heamoglobin">
+                <input type="tel" placeholder="Enter your heamoglobin level" id="heamoglobin">
+            </div>
+
+            <label for="address">Address</label>
+            <div class="card-input-container address">
+                <input type="textarea" placeholder="Enter your area,city,pincode,state..." id="address">
+            </div>
+
+            <label for="password">Password</label>
+            <div class="card-input-container password">
+                <input type="password" placeholder="Enter your password" id="password">
+            </div>
+            <label for="password">Confirm Password</label>
+            <div class="card-input-container password">
+                <input type="password" placeholder="Re-Enter your password" id="password">
+            </div>
+            <button class="card-button">Register</button>
+            <small class="card-forgot-password">Thank you for registering</small>
+        </form>
+    </div>
+</div>
+</body>
+</html>

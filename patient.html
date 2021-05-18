@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript">
+      
+  </script>
+  
+
+</head>
+<body>
+    <div class="container">
+  <div class="card">
+        <h1 class="card-title">Patient Details</h1>
+        <small class="card-subtitle">Enter your credentials here</small>
+        <form class="card-form">
+            <label for="name">Full Name</label>
+            <div class="card-input-container email">
+                <input type="text" placeholder="Enter patient's name" id="name">
+            </div>
+            <label for="username">E-mail Id</label>
+            <div class="card-input-container email">
+                <input type="text" placeholder="Enter your e-mail id" id="email">
+            </div>
+             <label for="gender">Gender:</label>
+            <div><p style="color: grey;">
+                &emsp;&emsp;<input type="radio" name="gender" value="female">&#09;Female
+                &emsp;&emsp;<input type="radio" name="gender" value="male">&#09;Male
+                &emsp;&emsp;<input type="radio" name="gender" value"other">&#09;Other</p><br>
+            </div>
+            <div class="card-input-container bloodgroup">
+                <label for="bloodgroup">Blood Group: </label>
+                <select name="bloodgroup" id="bloodgroup">
+                    <option value="select"> Select </option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+            <label for="duration">Blood required within(number no.of days)</label>
+            <div class="card-input-container duration">
+                <input type="tel" name="phone" maxlength="2" placeholder="Enter number of days" pattern="[6789][0-9]{9}" id="phone">
+            </div>
+            <label for="email">Mobile Number</label>
+            <div class="card-input-container number">
+                <input type="tel" name="phone" maxlength="10" placeholder="Enter your mobile number" pattern="[6789][0-9]{9}" id="phone">
+            </div>
+
+            <label for="address">Address</label>
+            <div class="card-input-container address">
+                <input type="textarea" placeholder="Enter your area,hospital name,pincode..." id="address">
+            </div>
+            <div><small style="color: grey">Re-check and submit to fulfill your requirement<br></small></div>
+            <button class="card-button">Submit</button>
+            <p>&emsp;&emsp;&emsp;&emsp;Hoping for a speed recovery</p>
+
+</div>
+</body>
+</html>
